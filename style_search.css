@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -24,8 +25,10 @@ section {
 }
 
 section > #title {
-    font-size: 2rem;
+    font-size: 5rem;
+    font-weight: 500;
     margin-bottom: 10px;
+    display: flex;
 }
 
 section > #search-form {
@@ -44,18 +47,31 @@ section > #search-form {
 }
 
 #q-submit, #qi-submit {
-    width: fit-content;
-    padding: 5px 10px;
-    border: 1px solid #989696;
-    border-radius: 2px;
-    background-color: transparent;
-    height: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    user-select: none;
 }
 
 #q-submit:hover, #qi-submit:hover{
     cursor: pointer;
     background-color: rgb(240, 240, 240);
 }
+
+#im-title {
+    color: #4285f4;
+    font-size: 16px;
+    align-self: self-end;
+}
+
 
 
 @media (min-width: 1024px) {
@@ -71,6 +87,6 @@ section > #search-form {
 
     #search-form > #q-input {
         width: 50%;
-        min-width: 250px;
+        min-width: 300px;
     }
 }
