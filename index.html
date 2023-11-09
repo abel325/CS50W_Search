@@ -8,8 +8,9 @@
     </head>
     <body>
         <nav>
-            <a href="./image_search.html" id="imgs">Image Search</a>
-            <a href="./advanced_search.html" id="advs">Advanced Search</a>
+            <a href="./image_search.html" id="imgs" class="gp-link">Image Search</a>
+            <span>|</span>
+            <a href="./advanced_search.html" id="advs" class="gp-link">Advanced Search</a>
         </nav>
 
         <section>
@@ -21,7 +22,7 @@
                 <span style="color: #34a853">l</span>
                 <span style="color: #ea4335">e</span>
             </span>
-            <form action="https://www.google.com/search" id="search-form">
+            <form autocomplete="off" action="https://www.google.com/search" id="search-form">
                 <input type="text" name="q" id="q-input">
                 <div id="submit-btns">
                     <input type="submit" value="Google Search" id="q-submit">
